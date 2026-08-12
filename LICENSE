@@ -1,0 +1,61 @@
+FolioSort — Software License
+
+Copyright (c) 2025-2026 Tiago Trindade. All rights reserved.
+
+FolioSort is proprietary software. It is distributed as a compiled
+application; its source code is not published and is not licensed for
+public use.
+
+PERMITTED
+
+  * Download, install and run FolioSort on your own computers.
+  * Use it for personal or commercial purposes, subject to the tier
+    limits of your licence (Free, Pro or Elite).
+  * Make backup copies of the installer for your own use.
+
+NOT PERMITTED
+
+  * Redistributing, reselling, renting or sublicensing the application
+    or any part of it.
+  * Reverse engineering, decompiling or disassembling the application,
+    except to the extent that applicable law expressly permits it
+    notwithstanding this limitation.
+  * Circumventing, removing or altering the licensing and feature
+    gating mechanisms.
+  * Using the name "FolioSort", its logo, its icons or its screenshots
+    to identify or promote another product.
+
+LICENCE KEYS
+
+Pro and Elite licence keys are issued per purchase and may be activated
+on the number of computers stated at the time of purchase. Keys are for
+the purchaser's own use and may not be shared or published.
+
+NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+FolioSort moves, renames and deletes files. Keep a backup of
+irreplaceable data.
+
+THIRD-PARTY COMPONENTS
+
+FolioSort bundles or links the following third-party software, each
+under its own licence, which continues to apply to that component:
+
+  * ExifTool by Phil Harvey — Artistic Licence / GPL (invoked as a
+    separate process). https://exiftool.org
+  * Sparkle — MIT Licence. https://sparkle-project.org
+  * NetSparkle — MIT Licence.
+  * Aptabase Swift SDK — MIT Licence. https://aptabase.com
+  * Apple MobileCLIP models — see Apple's accompanying model licence.
+
+CONTACT
+
+https://foliosort.app

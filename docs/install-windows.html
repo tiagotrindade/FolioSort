@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Install FolioSort — Windows</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#1a1c2a;
+    --card:#232538;
+    --card-hover:#2a2d44;
+    --border:#2e3150;
+    --text:#e4e6f0;
+    --text2:#9b9db5;
+    --text3:#6c6e88;
+    --amber:#f5a623;
+    --amber-bg:rgba(245,166,35,.12);
+    --green:#34d058;
+    --green-bg:rgba(52,208,88,.10);
+    --blue:#58a6ff;
+    --blue-bg:rgba(88,166,255,.10);
+    --red:#f85149;
+    --red-bg:rgba(248,81,73,.08);
+    --radius:14px;
+  }
+  html{font-size:16px}
+  body{
+    font-family:"Segoe UI Variable","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--text);
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;
+    padding:48px 24px 64px;line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .header{text-align:center;margin-bottom:40px}
+  .header h1{font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:6px}
+  .header .sub{color:var(--text2);font-size:.95rem}
+  .section-label{
+    font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--text3);margin-bottom:16px;
+  }
+
+  .container{max-width:680px;width:100%}
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:28px 30px;margin-bottom:16px;transition:border-color .2s;
+  }
+  .card:hover{border-color:#3d4068}
+
+  .badge{
+    display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    padding:3px 10px;border-radius:6px;vertical-align:middle;margin-right:10px;
+  }
+  .badge-amber{background:var(--amber);color:#1a1c2a}
+  .badge-green{background:var(--green);color:#1a1c2a}
+  .badge-blue{background:var(--blue);color:#1a1c2a}
+  .badge-red{background:var(--red);color:#fff}
+
+  .card-title{font-size:1.15rem;font-weight:700;display:inline;vertical-align:middle}
+  .card-sub{color:var(--text2);font-size:.88rem;margin-top:8px}
+  .card-compat{
+    display:inline-block;font-size:.75rem;font-weight:600;
+    padding:2px 9px;border-radius:5px;margin-top:8px;
+  }
+  .compat-all{background:var(--blue-bg);color:var(--blue)}
+
+  .steps{margin-top:20px;display:flex;flex-direction:column;gap:14px}
+  .step{display:flex;align-items:flex-start;gap:14px}
+  .step-num{
+    flex-shrink:0;width:30px;height:30px;border-radius:50%;
+    background:var(--amber);color:#1a1c2a;font-size:.82rem;font-weight:800;
+    display:flex;align-items:center;justify-content:center;margin-top:1px;
+  }
+  .step-text{font-size:.92rem;color:var(--text);line-height:1.5}
+  .step-text strong{color:#fff;font-weight:600}
+  .step-text code{
+    background:rgba(255,255,255,.08);padding:2px 7px;border-radius:5px;
+    font-family:Consolas,"Cascadia Mono","SF Mono",Menlo,monospace;font-size:.82rem;
+    color:var(--amber);user-select:all;word-break:break-all;
+  }
+  .step-text .kbd{
+    display:inline-block;border:1px solid var(--border);background:rgba(255,255,255,.04);
+    padding:1px 6px;border-radius:5px;font-size:.82rem;
+    font-family:Consolas,"Cascadia Mono",monospace;color:var(--text);
+  }
+
+  .callout-shot{
+    background:#0f1018;border:1px solid var(--border);border-radius:10px;
+    padding:14px 16px;margin-top:10px;color:var(--text2);font-size:.88rem;line-height:1.55;
+  }
+  .callout-shot .title{
+    color:var(--text);font-weight:700;font-size:.93rem;margin-bottom:6px;
+  }
+  .callout-shot .smartscreen{
+    background:#0078d4;color:#fff;padding:10px 14px;border-radius:6px;
+    font-weight:600;margin-bottom:8px;font-size:.85rem;display:inline-block;
+  }
+  .callout-shot a.more-info{color:#fff;text-decoration:underline;font-weight:600}
+
+  .divider{
+    border:none;border-top:1px solid var(--border);margin:32px 0 28px;
+  }
+
+  .note{
+    background:var(--red-bg);border:1px solid rgba(248,81,73,.18);
+    border-radius:10px;padding:16px 18px;margin-top:12px;
+    font-size:.84rem;color:var(--text2);line-height:1.55;
+  }
+  .note strong{color:var(--red);font-weight:600}
+
+  .info{
+    background:var(--blue-bg);border:1px solid rgba(88,166,255,.18);
+    border-radius:10px;padding:16px 18px;margin-top:12px;
+    font-size:.84rem;color:var(--text2);line-height:1.55;
+  }
+  .info strong{color:var(--blue);font-weight:600}
+
+  .trouble{
+    background:rgba(255,255,255,.03);border:1px solid var(--border);
+    border-radius:10px;padding:18px 20px;margin-top:8px;
+  }
+  .trouble summary{
+    cursor:pointer;font-size:.88rem;font-weight:600;color:var(--text2);
+    list-style:none;display:flex;align-items:center;gap:8px;
+  }
+  .trouble summary::before{content:"▸";font-size:.7rem;transition:transform .2s}
+  .trouble[open] summary::before{transform:rotate(90deg)}
+  .trouble .content{margin-top:14px;font-size:.86rem;color:var(--text2);line-height:1.6}
+  .trouble .content p{margin-bottom:10px}
+  .trouble .content code{
+    background:rgba(255,255,255,.08);padding:2px 7px;border-radius:5px;
+    font-family:Consolas,"Cascadia Mono",monospace;font-size:.8rem;color:var(--amber);
+  }
+
+  .footer{
+    text-align:center;margin-top:40px;font-size:.78rem;color:var(--text3);
+  }
+  .footer a{color:var(--blue);text-decoration:none}
+  .footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>How to Open FolioSort on Windows</h1>
+    <p class="sub">FolioSort isn't code-signed yet, so Windows Defender SmartScreen<br>will warn you on the first launch. It is <strong>not a virus</strong> — here's how to open it.</p>
+  </div>
+
+  <hr class="divider" style="margin-top:0">
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- METHOD 1 — SmartScreen "Run anyway"    -->
+  <!-- ═══════════════════════════════════════ -->
+  <p class="section-label">Recommended</p>
+
+  <div class="card">
+    <span class="badge badge-amber">Fastest</span>
+    <span class="card-title">SmartScreen → More info → Run anyway</span>
+    <p class="card-sub">Takes 10 seconds. Windows only asks once per executable.</p>
+    <span class="card-compat compat-all">Windows 10 &amp; 11 (x64)</span>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-text">Right-click the downloaded <code>FolioSort-2.18.0-windows.zip</code> → <strong>Properties</strong> → at the bottom tick <strong>Unblock</strong> → <strong>OK</strong>. (Skips re-prompting on every extracted file.)</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-text">Right-click the zip → <strong>Extract All…</strong> and pick a folder you own, e.g. <code>C:\Users\&lt;you&gt;\Apps\FolioSort\</code>. Keep <code>FolioSort.exe</code> and <code>Resources\</code> together.</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-text">Double-click <strong>FolioSort.exe</strong>. The blue SmartScreen dialog appears:</span>
+      </div>
+      <div class="callout-shot">
+        <div class="title">Windows protected your PC</div>
+        Microsoft Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.
+        <p style="margin-top:10px;color:var(--blue)"><a href="#" class="more-info" onclick="return false">▸ More info</a></p>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <span class="step-text">Click <strong>More info</strong>. A <strong>Run anyway</strong> button appears at the bottom — click it.</span>
+      </div>
+      <div class="step">
+        <span class="step-num">5</span>
+        <span class="step-text">Done — FolioSort launches. Future opens go straight to the app, no prompt.</span>
+      </div>
+    </div>
+
+    <div class="info">
+      <strong>Why does Windows do this?</strong> SmartScreen flags every new executable that doesn't have a paid Microsoft code-signing certificate — even open-source apps with public source code (like this one). Once you've clicked Run anyway, Windows remembers the choice for that exact file.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- METHOD 2 — Antivirus quarantine        -->
+  <!-- ═══════════════════════════════════════ -->
+  <p class="section-label">If Your Antivirus Quarantined It</p>
+
+  <div class="card">
+    <span class="badge badge-red">If blocked</span>
+    <span class="card-title">Norton / McAfee / Avast Heuristic</span>
+    <p class="card-sub">Some AV suites quarantine self-contained .NET single-file executables.</p>
+    <span class="card-compat compat-all">Windows 10 &amp; 11 (x64)</span>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-text">Open your antivirus dashboard → <strong>Quarantine</strong> / <strong>History</strong>.</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-text">Locate <strong>FolioSort.exe</strong>, click <strong>Restore</strong> (or <strong>Trust</strong> / <strong>Allow</strong>).</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-text">Add an <strong>exclusion</strong> for the install folder so future updates aren't flagged.</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Why does this happen?</strong> Heuristic engines flag the AOT / single-file packaging pattern itself, not the app's behavior. The same warning fires for any .NET 8 single-file build that bundles its runtime. The source for FolioSort is public on <a href="https://github.com/tiagotrindade/FolioSort" style="color:var(--blue)">GitHub</a> — every release is reproducible.
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Optional polish                        -->
+  <!-- ═══════════════════════════════════════ -->
+  <p class="section-label">Optional</p>
+
+  <div class="card">
+    <span class="badge badge-blue">Quality of life</span>
+    <span class="card-title">Pin to Start &amp; Taskbar</span>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-text">In File Explorer, right-click <strong>FolioSort.exe</strong>.</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-text">Choose <strong>Pin to Start</strong>, or <strong>Show more options → Pin to taskbar</strong>.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="badge badge-green">Clean uninstall</span>
+    <span class="card-title">Uninstall FolioSort</span>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-text">Delete the folder you extracted to (the one containing <strong>FolioSort.exe</strong>).</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-text">Open File Explorer's address bar and paste: <code>%LOCALAPPDATA%\FolioSort</code> → press <span class="kbd">Enter</span> → delete that folder too (settings, license, undo history).</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- Troubleshooting                        -->
+  <!-- ═══════════════════════════════════════ -->
+  <details class="trouble">
+    <summary>Troubleshooting — still won't open?</summary>
+    <div class="content">
+      <p><strong>1. The zip didn't extract cleanly.</strong><br>
+        FolioSort needs <code>FolioSort.exe</code> and the <code>Resources\</code> folder in the same directory. Re-extract the zip with right-click → Extract All; don't drag individual files out.</p>
+      <p><strong>2. "VCRUNTIME140.dll is missing" or similar.</strong><br>
+        You'll need the <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" style="color:var(--blue)">Microsoft Visual C++ Redistributable (x64)</a>. The .NET 8 runtime is bundled inside FolioSort.exe, so a separate .NET install is <em>not</em> required.</p>
+      <p><strong>3. Group Policy / Enterprise / Work laptop:</strong><br>
+        Your IT department may have an AppLocker / WDAC policy that blocks unsigned executables outright. There's nothing the app can do — ask IT to whitelist the FolioSort folder or run it from your personal device.</p>
+      <p><strong>4. Re-download the zip:</strong><br>
+        Occasionally a download is truncated. Re-download from the <a href="https://github.com/tiagotrindade/FolioSort/releases/latest" style="color:var(--blue)">releases page</a> and compare the file size with what's listed there.</p>
+    </div>
+  </details>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>FolioSort v2.18.0 &nbsp;·&nbsp; <a href="https://github.com/tiagotrindade/FolioSort">GitHub</a> &nbsp;·&nbsp; <a href="https://github.com/tiagotrindade/FolioSort/releases/latest">Latest Release</a> &nbsp;·&nbsp; Windows 10 / 11 (x64)</p>
+  </div>
+
+</div>
+
+</body>
+</html>
