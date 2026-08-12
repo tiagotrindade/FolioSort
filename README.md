@@ -193,7 +193,7 @@ Shot a burst? FolioSort scores every frame and **keeps the best one of each grou
 - **🛟 Safe by design** — Copy mode is the default, every transfer is checksum-verified, and **one-click Undo** reverses any batch.
 - **🖥️ Truly native on both platforms** — Swift/SwiftUI on macOS, .NET WPF on Windows. No Electron, small footprint.
 - **🎯 Reads metadata properly** — EXIF date chain (DateTimeOriginal → Digitized → TIFF) with subsecond precision, video creation dates, and GPS reverse-geocoding to city/country.
-- **💶 One-time purchase** — no subscription. Free tier is genuinely useful; **Pro is €19.99** and **Elite is €29.99**, both forever.
+- **💶 One-time purchase** — no subscription. Free tier is genuinely useful; **Pro is €19.99** and **Elite is €49.99**, both forever.
 
 ---
 
@@ -220,7 +220,7 @@ FolioSort is the tool for the job *underneath* all of those: turning raw files o
 
 FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimited organizer and every cleanup tool; **Elite** adds everything that runs a neural network — on-device AI search, face recognition, OCR, and automation. Both are a **one-time purchase, no subscription**.
 
-| | Free | Pro · €19.99 | Elite · €29.99 |
+| | Free | Pro · €19.99 | Elite · €49.99 |
 |---|:---:|:---:|:---:|
 | **Files per operation** | 100 | **Unlimited** | **Unlimited** |
 | Organize by date (Mover) | ✓ | ✓ | ✓ |
@@ -252,7 +252,7 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 ### 💜 Buy a license — one-time, no subscription
 
 - **[→ Buy Pro — €19.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_pro)** — the unlimited organizer + every cleanup tool
-- **[→ Buy Elite — €29.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_elite)** — everything in Pro **plus** on-device AI search, People, OCR & automation
+- **[→ Buy Elite — €49.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_elite)** — everything in Pro **plus** on-device AI search, People, OCR & automation
 
 1. Complete checkout → receive your **license key** by email
 2. Open FolioSort → **Settings → Upgrade** → paste key → **Activate**
@@ -452,7 +452,7 @@ FolioSort is built around not losing files: **Copy mode is the default** (origin
 Nowhere. All scanning, AI search, face recognition, OCR, duplicate detection, and organizing runs on your computer. No account, no upload, no cloud processing. The only optional network feature is reverse geocoding, which sends GPS coordinates (never images) to resolve city names.
 
 ### Is FolioSort free? What's the catch?
-No catch, no trial clock, no watermarks: the free tier processes **100 files per batch**, forever. Scanning, scoring and reviewing are always free and unlimited — you can see every duplicate, blurry shot and screenshot in your library before paying anything — and free includes your **first 20 cleanups** plus an AI taster. **Pro** (€19.99 one-time) removes the limit and unlocks power features like RAW formats, custom templates, and regex rename; **Elite** (€29.99 one-time) adds on-device AI search, face search, OCR, and automation. No subscription, ever.
+No catch, no trial clock, no watermarks: the free tier processes **100 files per batch**, forever. Scanning, scoring and reviewing are always free and unlimited — you can see every duplicate, blurry shot and screenshot in your library before paying anything — and free includes your **first 20 cleanups** plus an AI taster. **Pro** (€19.99 one-time) removes the limit and unlocks power features like RAW formats, custom templates, and regex rename; **Elite** (€49.99 one-time) adds on-device AI search, face search, OCR, and automation. No subscription, ever.
 
 ### Does it handle RAW photos and video?
 Yes — 80+ formats including Canon CR2/CR3, Nikon NEF, Sony ARW, DNG, plus cinema video (BRAW, R3D, ARRI). See the [full list](#supported-formats). RAW formats are a Pro feature.
