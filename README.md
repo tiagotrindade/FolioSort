@@ -71,9 +71,6 @@ One **Wizard**, three clicks, done. No metadata expertise required.
 
 ## See it in action
 
-### 🪄 Start with the Wizard — pick what you want, follow the steps
-![FolioSort Wizard guiding photo organization step by step](docs/screenshots/Wizard.png?v=5)
-
 ### 🗂️ Organize — sort by date, camera, or location with live preview
 ![Organize photos into folders by date, camera, or GPS location with live folder preview](docs/screenshots/Organize.png?v=5)
 
