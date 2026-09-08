@@ -71,6 +71,9 @@ One **Wizard**, three clicks, done. No metadata expertise required.
 
 ## See it in action
 
+### 🪄 Start with the Wizard — pick what you want, follow the steps
+![FolioSort Wizard guiding photo organization step by step](docs/screenshots/Wizard.png?v=5)
+
 ### 🗂️ Organize — sort by date, camera, or location with live preview
 ![Organize photos into folders by date, camera, or GPS location with live folder preview](docs/screenshots/Organize.png?v=5)
 
@@ -103,6 +106,20 @@ Getting your photos *out* of a cloud service is half the battle; the export is a
 
 ---
 
+## 📍 Place names written into your photos
+
+FolioSort has always turned GPS coordinates into a place and used that place to **name** things — folders, filenames, the file list. Now it can also write the place **into the file**, so it survives leaving FolioSort.
+
+- Writes both of the places a cataloguing app actually reads: the legacy **IPTC** block **and** the Photoshop **XMP** namespace — so **Lightroom, Bridge, Photo Mechanic and Apple Photos** see the same city you just resolved.
+- JPEG, HEIC, TIFF and DNG are written in place. Proprietary RAW files (CR2, CR3, NEF, ARW…) get a **sidecar**, and the RAW itself is never touched.
+- **Fully reversible.** FolioSort remembers what each tag said before it wrote, and restores exactly that — a tag that did not exist before is *removed* on revert, not blanked, because an empty city and no city are different things.
+- Your capture dates never move. A place name is a fact about the photo, not an edit to it.
+- Before writing, FolioSort **names the places it found** — "Lisboa, Porto, Sintra and 1 more" — so you can judge them first.
+
+Resolving place names is **free**, up to 100 photos per scan; Pro removes the cap. If you're leaving Lightroom, this is the part that survives the move.
+
+---
+
 ## Clean up your photo library
 
 Cleanup tools that form a single narrative: **Merge** collapses every scattered copy of your library into one · **Duplicates** removes the copies that merging exposes · **Blurry** clears the shots you'd never keep · **Screenshots** pulls the receipts and memes out of your photos. Every removal goes to the system **Recycle Bin / Trash and is always undoable**, you approve every decision before anything moves, and everything runs **100% on your computer**.
@@ -113,7 +130,11 @@ A guided 5-step wizard that merges any number of folders, drives, or Google Take
 ![Merge Sources wizard combining multiple photo folders and drives into one deduplicated library](docs/screenshots/Merge.png?v=5)
 
 ### 🧬 Duplicates — find exact *and* visually similar copies
-Finds exact **and visually similar** duplicate photos via perceptual fingerprinting — catching resized, re-compressed, cropped, and slightly-edited copies that byte/hash tools miss. Groups every version of a shot (labelled by *why* they match), suggests the keeper, shows a live "space to recover" counter, and a side-by-side compare view with EXIF. Quick and Comprehensive scan modes.
+Finds exact **and visually similar** duplicate photos via perceptual fingerprinting — catching resized, re-compressed, cropped, and slightly-edited copies that byte/hash tools miss. Groups every version of a shot (labelled by *why* they match), suggests the keeper, shows a live "space to recover" counter, and a side-by-side compare view with EXIF and **zoom up to 8×** — because choosing between two near-identical photos shouldn't be done blind. Quick and Comprehensive scan modes.
+
+**Nothing arrives pre-selected for the Trash unless the files are genuinely identical.** Byte-for-byte copies — verified by reading both files end to end, not by a fingerprint — arrive ticked. Anything matched *visually* arrives **unticked**, labelled **"possible match"** rather than a confident-looking percentage, and grouped under **Similar**. You choose what goes, and marking is never deleting: moving to the Trash is a separate press, and undoable.
+
+When a large library produces thousands of Similar groups, **"Keep suggested, mark all the rest"** clears them in a single action — scoped to the tier you have selected in the sidebar (never "All"), and it tells you how many groups and how many files it is about to mark before it marks anything.
 
 ![Duplicate photo finder detecting exact and visually similar copies with space-to-recover counter](docs/screenshots/Duplicates.png?v=5)
 
@@ -136,7 +157,7 @@ Automatically detects the screenshots polluting your photo library — receipts,
 The kind of search you gave up when you left Google Photos — except **nothing ever leaves your computer**. No account, no upload, no cloud processing. On-device models (MobileCLIP2 for images, plus face recognition and OCR) index your library locally.
 
 ### 💬 Search in plain language
-Type **"the dog on the beach"**, "my passport", or "birthday cake with candles" and FolioSort surfaces the matching photos — semantic search over your whole library, running entirely on-device.
+Type **"the dog on the beach"**, "my passport", or "birthday cake with candles" and FolioSort surfaces the matching photos — semantic search over your whole library, running entirely on-device. On a **100,000-photo** library a query comes back in **62 ms**. A mode picker says whether you mean **what a photo shows** or **what it says**, and a plain filename or number still finds its photo — `4782` finds `_DIV4782.NEF`, whatever your camera decided to call it.
 
 ![On-device AI semantic photo search finding pictures from a plain-language description](docs/screenshots/SemanticSearch.png?v=5)
 
@@ -177,7 +198,7 @@ Saved searches that **fill themselves**. Define a query once — a person, a pla
 ![Smart Folders — self-updating saved photo searches by person, place, text or date](docs/screenshots/SmartFolders.png?v=5)
 
 ### 🏆 Best Shots — AI Culling
-Shot a burst? FolioSort scores every frame and **keeps the best one of each group**, so you archive the keeper and clear the rest — automatic culling, entirely on-device.
+Shot a burst? FolioSort scores every frame and **keeps the best one of each group**, so you archive the keeper and clear the rest — automatic culling, entirely on-device. Then **Review** the calls yourself: a whole-folder grid that dims what you've already decided, ⌘/⇧ selection that Copy and Move act on, camera settings and a histogram beside each frame, star ratings written into the files (and undoable), and zoom that shows the actual photograph rather than the small JPEG preview buried inside the RAW.
 
 ![Best Shots AI culling keeping the sharpest frame of every burst automatically](docs/screenshots/BestShots.png?v=5)
 
@@ -186,8 +207,9 @@ Shot a burst? FolioSort scores every frame and **keeps the best one of each grou
 ## Why FolioSort
 
 - **🔒 Private by design** — your photos never leave your computer. No cloud, no account, no upload. All AI search, face recognition, and OCR run on-device. Optional reverse geocoding sends only GPS coordinates (never your files); anonymous usage analytics are opt-out.
-- **⚡ Built for bulk** — tested on libraries of 1,000s of files; fast XXHash64 integrity checks by default.
-- **🛟 Safe by design** — Copy mode is the default, every transfer is checksum-verified, and **one-click Undo** reverses any batch.
+- **⚡ Built for bulk** — tested on libraries of 1,000s of files; fast XXHash64 integrity checks by default. A move **within one disk** never rewrites the file, a duplicate scan holds a flat ~6 MB of memory however large the drive, and the destination is tested **once before a run starts** instead of failing on every file for hours.
+- **🛟 Safe by design** — Copy mode is the default, every transfer is checksum-verified, and **one-click Undo** reverses any batch — including the star ratings and place names FolioSort wrote into your files.
+- **☁️ It won't drag your cloud library onto your disk** — photos kept in **OneDrive, iCloud Drive or Dropbox** are often just placeholders. FolioSort recognises them *without opening them*, leaves them alone, and says how many it skipped, instead of quietly pulling your whole library down your connection.
 - **🖥️ Truly native on both platforms** — Swift/SwiftUI on macOS, .NET WPF on Windows. No Electron, small footprint.
 - **🎯 Reads metadata properly** — EXIF date chain (DateTimeOriginal → Digitized → TIFF) with subsecond precision, video creation dates, and GPS reverse-geocoding to city/country.
 - **💶 One-time purchase** — no subscription. Free tier is genuinely useful; **Pro is €19.99** and **Elite is €49.99**, both forever.
@@ -232,9 +254,11 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 | **Custom folder templates & profiles** | — | ✓ | ✓ |
 | **RAW photo & video formats** | — | ✓ | ✓ |
 | **Regex rename** | — | ✓ | ✓ |
-| **Reverse geocoding + location tokens** (City, Country) | — | ✓ | ✓ |
+| **Place names from GPS** (reverse geocoding) | ✓ *(100 photos/scan)* | ✓ | ✓ |
+| **Write place names into your photos** (IPTC + XMP, reversible) | ✓ *(100 photos/scan)* | ✓ | ✓ |
+| **Location tokens in folder names** (`{City}`, `{Country}`, `{State}`) | — | ✓ | ✓ |
 | **Event Organizer** (time-range sorting) | — | ✓ | ✓ |
-| **Cloud / NAS & Exit Kit import** (SMB/AFP/iCloud, WhatsApp, Amazon, OneDrive) | — | ✓ | ✓ |
+| **Cloud / NAS & Exit Kit import** (SMB/AFP/iCloud, WhatsApp, Amazon, OneDrive) | ✓ *(100 files/run)* | ✓ | ✓ |
 | **AI semantic search** — *"the dog on the beach"* | Taster · indexes 500 photos | — | ✓ |
 | **People** — automatic face grouping & naming | Taster · move 20 photos | — | ✓ |
 | **Find by Photo** (on-device face search) | Taster · move 20 photos | — | ✓ |
@@ -300,6 +324,7 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 
 - Define events and sub-events with start/end times; files sorted by capture timestamp
 - Two-level hierarchy (e.g. competition → heats)
+- **Auto-grouping interval** from 1 minute to 3 days, and an option to include files with **no capture date** (screenshots, exports, downloads)
 - Real-time overlap validation · between-slot fallback to parent event
 - Unmatched files → "Unmatched" folder or kept in source
 - UTC-aligned date pickers · live matched/unmatched counts · full undo
@@ -319,7 +344,9 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 <details>
 <summary><b>🧬 Duplicates, 👁️ Blurry & 📱 Screenshots</b></summary>
 
-- **Duplicates** — exact **and** visually similar detection via perceptual fingerprinting; groups every version, suggests the keeper, live "space to recover" counter, side-by-side compare with EXIF, Quick vs Comprehensive modes
+- **Duplicates** — exact **and** visually similar detection via perceptual fingerprinting; groups every version, suggests the keeper, live "space to recover" counter, side-by-side compare with EXIF and 8× zoom, Quick vs Comprehensive modes
+- Only byte-for-byte identical copies are ever pre-selected; visual matches arrive unticked as **"possible match"** under **Similar** — and **"Keep suggested, mark all the rest"** clears thousands of Similar groups in one tier-scoped, counted action
+- Cancel works during the confirm step, and scrolling a huge result no longer stalls the window
 - **Blurry** — sharpness score per photo, sorted blurriest-first, live sensitivity slider with no re-scan, ML-free by design
 - **Screenshots** — content-based detection of receipts, memes, and UI captures mixed into your photos, moved out in one click
 - macOS uses Apple's on-device Vision · Windows uses on-device perceptual hashing
@@ -329,7 +356,9 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 <details>
 <summary><b>🤖 AI Search (Elite)</b></summary>
 
-- **Semantic search** — describe a photo in plain language (*"the dog on the beach"*); on-device MobileCLIP2 + CLIP tokenizer, recall-gate validated
+- **Semantic search** — describe a photo in plain language (*"the dog on the beach"*); on-device MobileCLIP2 + CLIP tokenizer, recall-gate validated; **62 ms per query on a 100,000-photo library**
+- A mode picker for **what a photo shows** vs **what it says**, a match-strength slider that filters every kind of hit, filename/number matching (`4782` → `_DIV4782.NEF`), and ⇧-click range selection
+- **Clear index** in the Index Status panel; indexing writes **one** file (~1.1 KB per photo) and never puts anything beside your photos
 - **People** — automatic face grouping into people, with names that survive a re-scan; a *"same person?"* merge queue instead of a threshold slider; per-person move/export; People strip after every Organize run
 - **People → XMP sidecars** — write your named people into XMP so Lightroom and Capture One read the same names; choose named people only, or everyone
 - **Find by Photo** — pick a reference photo, get every photo of that person; on-device face detection + recognition (Vision + Core ML on macOS, ONNX YuNet + SFace on Windows)
@@ -346,15 +375,17 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 - **Workflows** — chain Organize → Duplicates → Rename → Screenshots → Blurry in one run, with a review-pause between steps and per-step LIFO undo
 - **Watch Folders** — auto-organize new files as they land in a watched folder
 - **Smart Folders** — self-filling saved searches (person, place, text, date range) that update as your library grows
-- **Best Shots (AI Culling)** — scores every frame of a burst and keeps the best one, on-device
+- **Best Shots (AI Culling)** — scores every frame of a burst and keeps the best one, on-device; **Review** adds a whole-folder grid, ⌘/⇧ selection that Copy and Move act on, info + histogram, undoable star ratings, and zoom on the real RAW rather than its embedded preview
 </details>
 
 <details>
 <summary><b>📍 GPS Reverse Geocoding & Date Handling</b></summary>
 
-- Reads GPS from EXIF; resolves to city/country/state via reverse geocoding (Apple CLGeocoder on macOS)
+- Reads GPS from EXIF; resolves to city/country/state via reverse geocoding (Apple CLGeocoder on macOS) — **free up to 100 photos per scan**
 - Location tokens: `{City}`, `{Country}`, `{State}`, `{Locality}`
-- Smart disk + memory cache (~11 m precision), rate-limited, Null-Island `(0,0)` rejected
+- **Writes the place into the file** — legacy IPTC block + Photoshop XMP namespace (what Lightroom, Bridge, Photo Mechanic and Apple Photos read); JPEG/HEIC/TIFF/DNG in place, sidecar for proprietary RAW
+- Reversible per tag — the previous value is restored exactly, and a tag that did not exist before is removed rather than blanked; capture dates never move
+- Smart disk + memory cache (~11 m precision), rate-limited, Null-Island `(0,0)` rejected; roughly ¾ of lookups reuse an answer from within ~110 m
 - EXIF date chain: DateTimeOriginal → DateTimeDigitized → TIFFDateTime (supports scanned photos)
 - Subsecond precision · file creation/modification fallback · UTC-consistent sorting
 </details>
@@ -364,10 +395,12 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 
 - Post-transfer checksum verification (XXHash64 free · SHA-256 Pro)
 - Duplicate handling: Skip (free) · Ask Each Time / Automatic (Pro)
-- Cloud/NAS (Pro): SMB/AFP shares, iCloud Drive auto-download, retry with backoff, disconnect handling, live MB/s
-- Undo: reverse the last batch in one click · persistent history up to 50 batches (Pro)
+- Cloud/NAS (free): SMB/AFP shares, retry with backoff, disconnect handling, live MB/s — where your photos live was never a tier question
+- **Cloud placeholders** (OneDrive · iCloud Drive · Dropbox) are recognised *without being opened*, skipped, and reported with a count and what to do about them — so a scan never silently downloads your library. Organize is the deliberate exception: it downloads what it needs, with a progress bar, because it cannot sort a photo by a date it hasn't read
+- **Write pre-flight**: the destination is tested once before a run starts, across all nine modules that move, copy or delete — a refused folder is reported in seconds, and a *locked* file is told apart from a permissions one
+- Undo: reverse the last batch in one click · persistent history up to 50 batches (Pro) · covers star ratings and place names written into files
 - Searchable, exportable Activity log
-- Automatic updates via Sparkle (macOS) and the Microsoft Store (Windows)
+- Automatic updates via Sparkle (macOS), and the Microsoft Store or the built-in updater (Windows)
 </details>
 
 ---
@@ -443,10 +476,16 @@ Use **People** (Elite). FolioSort detects and groups the faces in your folder in
 Use **Merge Sources**: a guided wizard that combines any number of folders, drives, and Takeout exports into one clean, de-duplicated library. It detects exact and visually similar duplicates in one scan and keeps the best version of each photo (RAW > resolution > size), without deleting anything by default.
 
 ### Is it safe to run on the only copy of my photos?
-FolioSort is built around not losing files: **Copy mode is the default** (originals untouched), every transfer is checksum-verified before the source is ever removed, deletions go to the system Trash/Recycle Bin, and every batch has one-click Undo. That said — you should always have a backup of irreplaceable photos, with or without FolioSort.
+FolioSort is built around not losing files: **Copy mode is the default** (originals untouched), every transfer is checksum-verified before the source is ever removed, deletions go to the system Trash/Recycle Bin, and every batch has one-click Undo. Before a run starts it also tests that the destination can actually be written to, so a folder you don't have permission for is reported in seconds rather than as thousands of identical errors. That said — you should always have a backup of irreplaceable photos, with or without FolioSort.
 
 ### Does it work offline? Where do my photos go?
 Nowhere. All scanning, AI search, face recognition, OCR, duplicate detection, and organizing runs on your computer. No account, no upload, no cloud processing. The only optional network feature is reverse geocoding, which sends GPS coordinates (never images) to resolve city names.
+
+### Will it download my OneDrive, iCloud or Dropbox photos onto my disk?
+No. Those services often leave a placeholder on disk and keep the photo itself in the cloud until something opens it — and opening a photo is the first thing any organizer does. FolioSort recognises placeholders **without opening them**, skips them, and tells you how many it skipped and how to include them next time (right-click in Finder → *Download Now*). The one deliberate exception is Organize, which does download what it needs, with a progress bar, because it cannot sort a photo by a date it hasn't read.
+
+### Can I get the place names into Lightroom?
+Yes. FolioSort resolves your GPS coordinates into a city and can **write it into the file** — both the legacy IPTC block and the Photoshop XMP namespace, which is what **Lightroom, Bridge, Photo Mechanic and Apple Photos** read. JPEG, HEIC, TIFF and DNG are written in place; proprietary RAW gets a sidecar and is never touched. It's reversible tag by tag, and your capture dates never move. Resolving places is free up to 100 photos per scan.
 
 ### Is FolioSort free? What's the catch?
 No catch, no trial clock, no watermarks: the free tier processes **100 files per batch**, forever. Scanning, scoring and reviewing are always free and unlimited — you can see every duplicate, blurry shot and screenshot in your library before paying anything — and free includes your **first 20 cleanups** plus an AI taster. **Pro** (€19.99 one-time) removes the limit and unlocks power features like RAW formats, custom templates, and regex rename; **Elite** (€49.99 one-time) adds on-device AI search, face search, OCR, and automation. No subscription, ever.
@@ -463,9 +502,25 @@ Those manage a *library database*. FolioSort organizes the **actual files and fo
 
 See the [Releases page](https://github.com/tiagotrindade/FolioSort/releases) for the full version history.
 
-**Latest — v4.7.1 (AI Search quality):** plain-language search got noticeably better at saying what it actually found — results now tell you what was actually searched and flag a weak match as weak, instead of giving a near-miss a confident-looking score, and one-word queries are translated before they're matched · an OCR substring can no longer hijack the whole result set · fixed a model cache that quietly served the old encoder forever, and face indexes that rebuilt for nothing. **Both macOS and Windows.**
+**Latest — v4.9.7 · both macOS and Windows.** AI Search answers **12.7× faster** — a query on a 100,000-photo library went from 789 ms to **62 ms** · a search **mode picker** that says whether you mean *what a photo shows* or *what it says*, so the match-strength slider can filter filename and OCR hits too · **zoom to 8×** in the photo preview and the duplicate comparison, with drag to pan and double-click to fit · **Events**: pick the grouping interval (1 minute → 3 days), include files with no capture date, and every event now matches its own last photo · **Duplicates**: a new bulk **"Keep suggested, mark all the rest"** for the thousands of *Similar* groups a large library produces — scoped to one tier, counted before it marks anything · in **Copy** mode a free user could never reach file 101 — fixed · **cloud and NAS folders are free**: the 100-file limit is the whole rule.
 
-**v4.7.0 — Honest walls & proof-first results:** the panel at the end of a run now leads with **proof of what changed**, not a table of counts · the free-limit wall names the outcome you're buying instead of a tier, counts your RAW files honestly, and its buttons no longer promise something else · consistent **Scan** button across Rename and Google Photos · purchases are attributed to the screen that sold them, with no server.
+**v4.9.6 — First-launch crash:** installing FolioSort on a brand-new Mac on 4.9.3–4.9.5 quit the app the moment it launched — the welcome screen looked for its logo in the wrong place inside the installed bundle. Fixed, with a test that fails the build if the mistake is ever reintroduced. Upgrades were never affected.
+
+**v4.9.5 — Cloud files, and duplicates you can trust:** photos that live in **OneDrive, iCloud Drive or Dropbox** are no longer downloaded behind your back — FolioSort recognises placeholder files without opening them, and says how many it skipped and what to do about it · in **Quick** duplicate mode **only byte-for-byte identical copies arrive pre-selected**; anything matched visually arrives unticked, labelled **"possible match"** instead of a percentage, and grouped under *Similar* · scrolling a huge duplicates result no longer locks up · AI Search matches the digits inside a filename whatever the camera named it (`1643` finds `DSC01643`), and says when it couldn't read a folder instead of reporting a green "0 new photos" · the Mover reports throughput on every run, not just on network volumes.
+
+**v4.9.4 — A 2 TB duplicate scan on a 16 GB Mac:** the last step of a duplicate scan held on to every byte it read — a drive with 63 GB of duplicates made the app ask for 63 GB. Now **flat at 5.8 MB** however much it reads, so the size of the drive no longer decides whether the scan can run · the same mistake in file hashing, fixed in the same release · **"Run in Background"** no longer blocks Organize just as hard as waiting did, and only asks for a place lookup when your folder pattern actually contains a place token · when a Move empties the folder you picked, the results panel offers it to you instead of leaving it there silently · AI Search can find a file by its name.
+
+**v4.9.3 — A first screen that shows the work:** the welcome screen now *shows* camera filenames settling into `Photos › 2019 › 07 July › Lisbon`, with both halves left on screen to compare · **Pro and Elite side by side**, five lines each, so the tiers can be compared without scrolling, and the licence-key box stops competing with the buttons · **Best Shots → Review, rebuilt**: whole-folder grid (`G`) with decided photos dimmed rather than hidden, ⌘/⇧ selection that Copy and Move act on, `Next left` to the next undecided photo, camera settings and histogram back and on by default · zooming a RAW now shows the photograph, not the small JPEG preview inside it — which on some bodies covers only 17% of the frame.
+
+**v4.9.0 & v4.8.1 — People that aren't people, and same-disk moves:** face detections that aren't faces are rejected outright on two measured gates, and **"Not a person"** hides whatever still slips through, across re-scans · the duplicate scan's byte-for-byte confirm is now its own visible step and **Cancel works during it** · the People grid no longer freezes the window on a large library · **moving files within one disk is nearly instant** with *Verify Integrity* on — it used to write a complete second copy, ~3 GB of disk work to move a 1 GB video; if you switched verification off to work around that, switch it back on · place lookups reuse a nearby answer, so roughly ¾ of them disappear · the **Photos / Videos / Other** tabs carry their own counts and stop implying they change what gets organized · **Rescan needed** on the Scan button when a file-type setting changes after a scan · **Clear index** for AI Search.
+
+**v4.9.1 — The runs that failed every file, and never said why:** the destination is now tested **once, before the run starts**, across all nine modules that move, copy or delete — one customer's Duplicates → Move to Folder ran five times over four days, up to 8 hours each, and never moved a file · failures name their cause once instead of repeating the same error 605 times, and a **locked** file is told apart from a permissions one · relocating many same-named files no longer slows to a crawl (4,000 files: 157 s → 0.7 s) · star ratings written into photos can be undone, and a rescan no longer throws away the stars you just gave.
+
+**v4.8.0 — Place names written into your photos:** FolioSort always turned coordinates into a place and used it to name folders; now it can write the place **into the file** — the legacy **IPTC** block *and* the Photoshop **XMP** namespace, the two that Lightroom, Bridge, Photo Mechanic and Apple Photos actually read. JPEG/HEIC/TIFF/DNG in place, a sidecar for proprietary RAW, **fully reversible** (a tag that didn't exist is removed on revert, not blanked), and your capture dates never move · **resolving place names is now free**, up to 100 photos per scan.
+
+> 4.8.0 through 4.9.3 shipped on macOS first; Windows caught up over 4.9.4–4.9.6 and both platforms are now on **4.9.7**.
+
+**v4.7.x — AI Search quality & honest walls:** plain-language search got better at saying what it actually found — results say what was searched and flag a weak match as weak, one-word queries are translated before they're matched, and an OCR substring can no longer hijack the result set · the panel at the end of a run leads with **proof of what changed**, not a table of counts · the free-limit wall names the outcome you're buying instead of a tier, and counts your RAW files honestly · a consistent **Scan** button across Rename and Google Photos · **Universal binary** (Apple Silicon + Intel) on macOS.
 
 **v4.6.0 — People:** FolioSort now **groups the faces in your library into people, automatically** — name someone once and the name survives a re-scan, with a *"same person?"* merge queue instead of a threshold slider · **write your named people into XMP sidecars** so Lightroom and Capture One see them · a **People strip** after every Organize run · pick exactly which **file types** a copy/move includes · a **Custom** folder-pattern card that opens the template builder · Elite is now offered wherever Pro is, so Pro owners can actually find it. **Both platforms.**
 
