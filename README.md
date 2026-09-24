@@ -56,10 +56,10 @@ No account. No upload. No scripts. **[Download free](https://github.com/tiagotri
 ## Who it's for
 
 ### 🗂️ Google Photos refugees
-Leaving Google Photos? The Takeout export is notoriously broken — dates live in sidecar `.json` files, names are scrambled, and RAWs are disguised as JPEGs. **FolioSort's Google Photos mode reads those sidecars, writes the real date + GPS + people tags back into each file, and sorts everything** into the structure you want. It even detects Canon CR2/CR3 files that Google silently renamed to `.jpg`.
+Leaving Google Photos? The Takeout export is notoriously broken — dates live in sidecar `.json` files, names are scrambled, and some RAW uploads come back as JPEGs still carrying a `.CR2`/`.CR3` extension. **FolioSort's Google Photos mode reads those sidecars, writes the real date + GPS + people tags back into each file, and sorts everything** into the structure you want. It even detects `.CR2`/`.CR3` files that Takeout actually saved as JPEGs, and reads them by their real format.
 
 ### 📷 Photographers & videographers
-Sort by **date, camera body, lens, or GPS city**. Built-in presets for date-based archives, multi-camera workflows, and video production — or build your own folder template with tokens like `{YYYY}/{MM}/{Camera}/{City}`. Handles **80+ formats including RAW** (CR3, NEF, ARW, DNG…) and cinema video (BRAW, R3D, ARRI).
+Sort by **date, camera body, lens, or GPS city**. Built-in presets for date-based archives, multi-camera workflows, and video production — or build your own folder template with tokens like `{YYYY}/{MM}/{Camera}/{City}`. Handles **91 formats including RAW** (CR3, NEF, ARW, DNG…) and cinema video (BRAW, R3D, ARRI).
 
 ### 🎯 Event shooters
 Sorting a competition, wedding, or multi-day trip? **Define time ranges** and FolioSort drops every photo into the right event/sub-event folder automatically, based on when it was actually taken.
@@ -212,7 +212,7 @@ Shot a burst? FolioSort scores every frame and **keeps the best one of each grou
 - **☁️ It won't drag your cloud library onto your disk** — photos kept in **OneDrive, iCloud Drive or Dropbox** are often just placeholders. FolioSort recognises them *without opening them*, leaves them alone, and says how many it skipped, instead of quietly pulling your whole library down your connection.
 - **🖥️ Truly native on both platforms** — Swift/SwiftUI on macOS, .NET WPF on Windows. No Electron, small footprint.
 - **🎯 Reads metadata properly** — EXIF date chain (DateTimeOriginal → Digitized → TIFF) with subsecond precision, video creation dates, and GPS reverse-geocoding to city/country.
-- **💶 One-time purchase** — no subscription. Free tier is genuinely useful; **Pro is €19.99** and **Elite is €49.99**, both forever.
+- **💶 One-time purchase** — no subscription. Free tier is genuinely useful; **Pro is €29.99** and **Elite is €39.99**, both forever.
 
 ---
 
@@ -231,7 +231,7 @@ Shot a burst? FolioSort scores every frame and **keeps the best one of each grou
 
 ¹ Apple Photos, Lightroom — great at editing and browsing a *library database*, but they don't produce a clean folder structure on disk. ² Google Photos, Amazon Photos — convenient, but your photos live on their servers under a subscription. ³ ExifTool one-liners and classic date-sorter utilities — powerful but manual, no preview, no undo, no cleanup or AI.
 
-FolioSort is the tool for the job *underneath* all of those: turning raw files on disks, SD cards, NAS shares, and cloud exports into a clean, future-proof folder archive that outlives any app.
+FolioSort is a complete photo manager that keeps the library as plain folders: it organizes raw files from disks, SD cards, NAS shares and cloud exports into a clean archive, cleans it, and finds any photo in it with on-device AI — and the result outlives any app. You only need something else to develop RAW files (Lightroom, Capture One) or to serve photos to a phone from a server (Immich, PhotoPrism).
 
 ---
 
@@ -239,7 +239,7 @@ FolioSort is the tool for the job *underneath* all of those: turning raw files o
 
 FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimited organizer and every cleanup tool; **Elite** adds everything that runs a neural network — on-device AI search, face recognition, OCR, and automation. Both are a **one-time purchase, no subscription**.
 
-| | Free | Pro · €19.99 | Elite · €49.99 |
+| | Free | Pro · €29.99 | Elite · €39.99 |
 |---|:---:|:---:|:---:|
 | **Files per operation** | 100 | **Unlimited** | **Unlimited** |
 | Organize by date (Mover) | ✓ | ✓ | ✓ |
@@ -272,8 +272,8 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 
 ### 💜 Buy a license — one-time, no subscription
 
-- **[→ Buy Pro — €19.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_pro)** — the unlimited organizer + every cleanup tool
-- **[→ Buy Elite — €49.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_elite)** — everything in Pro **plus** on-device AI search, People, OCR & automation
+- **[→ Buy Pro — €29.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_pro)** — the unlimited organizer + every cleanup tool
+- **[→ Buy Elite — €39.99](https://www.foliosort.app/upgrade?utm_source=github&utm_medium=readme&utm_campaign=buy_elite)** — everything in Pro **plus** on-device AI search, People, OCR & automation
 
 1. Complete checkout → receive your **license key** by email
 2. Open FolioSort → **Settings → Upgrade** → paste key → **Activate**
@@ -303,7 +303,7 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 - Point at any exported Takeout folder — structure-agnostic
 - **Writes original capture date, GPS, and people tags back into each file** via bundled ExifTool
 - Reads the real camera model from EXIF, even inside Takeout archives
-- Detects CR2/CR3 RAWs that Google renamed to `.jpg` and handles them correctly
+- Detects `.CR2`/`.CR3` files that Takeout actually saved as JPEGs, and reads them by their real format
 - **Exit Kit** import connectors: WhatsApp (filename date recovery), Amazon Photos, OneDrive, iCloud export (CSV/JSON date recovery)
 - Source auto-detection badge · `{Album}` / `{Chat}` tokens · NAS-safe folder names · Synology & Immich destination presets
 - Flat mode (free) or date-folder organisation with 7 patterns · Copy or Move · live ETA · **Exit Report**
@@ -361,7 +361,7 @@ FolioSort is **free to use** with a generous limit. **Pro** unlocks the unlimite
 - **Clear index** in the Index Status panel; indexing writes **one** file (~1.1 KB per photo) and never puts anything beside your photos
 - **People** — automatic face grouping into people, with names that survive a re-scan; a *"same person?"* merge queue instead of a threshold slider; per-person move/export; People strip after every Organize run
 - **People → XMP sidecars** — write your named people into XMP so Lightroom and Capture One read the same names; choose named people only, or everyone
-- **Find by Photo** — pick a reference photo, get every photo of that person; on-device face detection + recognition (Vision + Core ML on macOS, ONNX YuNet + SFace on Windows)
+- **Find by Photo** — pick a reference photo, get every photo of that person; on-device face detection + recognition (YuNet + AuraFace on both platforms — Core ML on macOS, ONNX on Windows)
 - **OCR text search** — find photos by the text they contain, indexed on-device
 - **Auto-Events & date inference** — suggested events from time/place clusters, dates recovered for undated files
 - One-click **Move to Folder** on any result set
@@ -488,13 +488,13 @@ No. Those services often leave a placeholder on disk and keep the photo itself i
 Yes. FolioSort resolves your GPS coordinates into a city and can **write it into the file** — both the legacy IPTC block and the Photoshop XMP namespace, which is what **Lightroom, Bridge, Photo Mechanic and Apple Photos** read. JPEG, HEIC, TIFF and DNG are written in place; proprietary RAW gets a sidecar and is never touched. It's reversible tag by tag, and your capture dates never move. Resolving places is free up to 100 photos per scan.
 
 ### Is FolioSort free? What's the catch?
-No catch, no trial clock, no watermarks: the free tier processes **100 files per batch**, forever. Scanning, scoring and reviewing are always free and unlimited — you can see every duplicate, blurry shot and screenshot in your library before paying anything — and free includes your **first 20 cleanups** plus an AI taster. **Pro** (€19.99 one-time) removes the limit and unlocks power features like RAW formats, custom templates, and regex rename; **Elite** (€49.99 one-time) adds on-device AI search, face search, OCR, and automation. No subscription, ever.
+No catch, no trial clock, no watermarks: the free tier processes **100 files per batch**, forever. Scanning, scoring and reviewing are always free and unlimited — you can see every duplicate, blurry shot and screenshot in your library before paying anything — and free includes your **first 20 cleanups** plus an AI taster. **Pro** (€29.99 one-time) removes the limit and unlocks power features like RAW formats, custom templates, and regex rename; **Elite** (€39.99 one-time) adds on-device AI search, face search, OCR, and automation. No subscription, ever.
 
 ### Does it handle RAW photos and video?
-Yes — 80+ formats including Canon CR2/CR3, Nikon NEF, Sony ARW, DNG, plus cinema video (BRAW, R3D, ARRI). See the [full list](#supported-formats). RAW formats are a Pro feature.
+Yes — 91 formats (46 photo and video types free, plus 45 RAW and cinema formats with Pro), including Canon CR2/CR3, Nikon NEF, Sony ARW, DNG, plus cinema video (BRAW, R3D, ARRI). See the [full list](#supported-formats). RAW formats are a Pro feature.
 
 ### Why not just use Apple Photos or Lightroom?
-Those manage a *library database*. FolioSort organizes the **actual files and folders on disk** — ideal if you archive to a NAS or external drive, want a future-proof folder structure that outlives any app, or need to clean up a mess *before* importing it anywhere. See [How FolioSort compares](#how-foliosort-compares).
+Those manage a *library database*. FolioSort organizes the **actual files and folders on disk** — and then cleans and searches it, so the folders are the library. Ideal if you archive to a NAS or external drive and want a future-proof structure that outlives any app. Lightroom stays the right tool for developing RAW files. See [How FolioSort compares](#how-foliosort-compares).
 
 ---
 
