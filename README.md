@@ -8,7 +8,7 @@
 
 **Nothing imported. Nothing uploaded. Pay once, own it forever.**
 
-### 🎉 [FolioSort 5 is out for Mac](https://github.com/tiagotrindade/FolioSort/releases/latest) — Windows follows soon
+### 🎉 [FolioSort 5 is out — for Mac and Windows](https://github.com/tiagotrindade/FolioSort/releases/latest)
 
 [![Latest release](https://img.shields.io/github/v/release/tiagotrindade/FolioSort?label=latest&color=8b5cf6)](https://github.com/tiagotrindade/FolioSort/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/tiagotrindade/FolioSort/total?color=8b5cf6)](https://github.com/tiagotrindade/FolioSort/releases)
@@ -19,10 +19,10 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.0.0 | 🪟 **Windows 10/11** · FolioSort 4.9.9 |
+| 🍎 **macOS 14+** · FolioSort 5.0.0 | 🪟 **Windows 10/11** · FolioSort 5.0.0 |
 |:---:|:---:|
 | [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
-| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · FolioSort 5 coming soon |
+| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort-5.0.0-windows.zip) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
 
@@ -32,7 +32,7 @@
 
 ![FolioSort 5 Library Home — every photo on every drive in one timeline, with on-device AI search, On this day and recent events](docs/screenshots/v5/library-home.png)
 
-<sub>Real app, real photos — FolioSort 5.0.0 on macOS.</sub>
+<sub>Real app, real photos — FolioSort 5.0.0. Same Library, AI Cull, Tag & Fix and Protect on Windows.</sub>
 
 <br>
 
@@ -306,7 +306,7 @@ One **Wizard**, three clicks, done. No metadata expertise required.
 
 </div>
 
-**Do the math:** on-device AI photo search alone costs **$199–249** (Excire Foto); AI culling alone is **$120+/year, forever** (Aftershoot, Narrative). **FolioSort Elite does search + people + OCR + culling + automation for €39.99, once.**
+**Do the math:** on-device AI photo search alone costs **€229** (Excire Foto 2027); AI culling alone is **$120+/year, forever** (Aftershoot Select). **FolioSort Elite does search + people + OCR + culling + automation for €39.99, once.**
 
 1. Complete checkout (Lemon Squeezy, merchant of record) → your **licence key** arrives by email in seconds
 2. Open FolioSort → **Settings → Upgrade** → paste the key → **Activate**
@@ -327,19 +327,28 @@ One **Wizard**, three clicks, done. No metadata expertise required.
 
 ## How FolioSort compares
 
-| | **FolioSort 5** | Lightroom / Apple Photos | Google Photos / iCloud | DIY scripts |
-|---|:---:|:---:|:---:|:---:|
-| Works on **your existing folders** — no import | ✓ | — | — | ✓ |
-| Library view: timeline, map, people, events | ✓ | ✓ | ✓ | — |
-| Organizes the **actual files & folders on disk** | ✓ | — | — | ✓ |
-| Fixes **Google Takeout** broken dates | ✓ free | — | — | partial |
-| **AI search**, faces, OCR | ✓ on-device | device-dependent | ✓ in the cloud | — |
-| **AI culling** → XMP for Lightroom | ✓ | manual | — | — |
-| Duplicate · blurry · screenshot cleanup | ✓ | partial | partial | — |
-| **Verified backup** + bit-rot check | ✓ | — | — | — |
-| Photos **stay on your computer** | ✓ | ✓ | — | ✓ |
-| macOS **and** Windows, native | ✓ | varies | web | varies |
-| Pricing | **one-time** | free–subscription | subscription | free |
+**One app instead of four.** Most photo software does one job well — a catalog, an AI search, a culler, a cloud. FolioSort 5 does all of them on the folders you already have, for one price, once.
+
+| | **FolioSort 5** | Lightroom Classic | Excire Foto | Aftershoot | Mylio Photos | digiKam | Apple Photos | Google Photos |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Works on **your existing folders** — nothing imported | ✅ | ❌<br><sub>catalog</sub> | ✅ | n/s | ✅ | ⚠️<br><sub>database</sub> | ❌<br><sub>library package</sub> | ❌<br><sub>cloud</sub> |
+| **Sorts files into dated folders** from EXIF | ✅<br><sub>preview + undo</sub> | ❌ | ❌ | ❌ | n/s | ⚠️<br><sub>on import</sub> | ❌ | ❌ |
+| **AI search** in plain language | ✅<br><sub>on-device</sub> | ❌ | ✅ | ❌ | ✅ | ❌<br><sub>auto-tags</sub> | ⚠️<br><sub>Apple Intelligence Macs</sub> | ✅<br><sub>in the cloud</sub> |
+| **Text in photos** (OCR) search | ✅ | ❌ | ✅ | ❌ | n/s | ❌ | ✅ | ✅<br><sub>in the cloud</sub> |
+| **Face grouping** & find a person | ✅ | ✅ | ✅ | ⚠️<br><sub>key faces</sub> | ✅ | ✅ | ✅ | ✅<br><sub>in the cloud</sub> |
+| **AI culling** — best of every burst | ✅ | ❌ | ⚠️<br><sub>ratings</sub> | ✅ | ⚠️<br><sub>similar shots</sub> | ❌ | ❌ | ❌ |
+| **Duplicates** — exact + visually similar | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | ⚠️<br><sub>Duplicates album</sub> | ⚠️<br><sub>exact, on upload</sub> |
+| **AI keywords written into the files** (XMP/IPTC) | ✅ | ❌ | ✅ | n/s | n/s | ✅ | ❌ | ❌ |
+| **Fixes dates & places** inside the files | ✅ | ⚠️<br><sub>manual</sub> | n/s | ❌ | n/s | ⚠️<br><sub>manual</sub> | ⚠️<br><sub>dates, manual</sub> | ❌ |
+| **Google Takeout repair** | ✅<br><sub>free</sub> | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Verified backup** + bit-rot check | ✅ | ❌ | ❌ | ❌ | n/s | ❌ | ❌ | ❌ |
+| Works **offline**, **no account** | ✅ | ❌<br><sub>Adobe ID</sub> | ✅ | ❌<br><sub>account</sub> | ❌<br><sub>account</sub> | ✅ | ✅ | ❌ |
+| **macOS + Windows** | ✅<br><sub>one licence</sub> | ✅ | ✅ | ✅ | ✅ | ✅<br><sub>+Linux</sub> | ❌<br><sub>Mac only</sub> | 🌐 web |
+| **Price** | **Free · €29.99 / €39.99 once** | $11.99–19.99 / month | €229 once | from $120 / year | $240 / year | free, open source | free | storage subscription |
+
+<sub>✅ yes · ⚠️ partly · ❌ no · n/s = not stated by the vendor. From each vendor's own pages, October 2026 — spot something out of date? [Open an issue](https://github.com/tiagotrindade/FolioSort/issues) and it gets fixed. Detailed head-to-heads: [vs Lightroom](https://www.foliosort.app/vs/lightroom-photo-organization?utm_source=github&utm_medium=readme&utm_campaign=compare) · [vs Excire](https://www.foliosort.app/vs/excire-foto-alternative?utm_source=github&utm_medium=readme&utm_campaign=compare) · [vs digiKam](https://www.foliosort.app/vs/digikam?utm_source=github&utm_medium=readme&utm_campaign=compare) · [vs Photo Mechanic](https://www.foliosort.app/vs/photo-mechanic-alternative?utm_source=github&utm_medium=readme&utm_campaign=compare) · [best photo organizer software](https://www.foliosort.app/best/photo-organizer-software?utm_source=github&utm_medium=readme&utm_campaign=compare).</sub>
+
+**FolioSort Elite = what Excire (€229) + Aftershoot ($120/year) + Mylio ($240/year) do between them — for €39.99, once.**
 
 FolioSort keeps the library as **plain folders** and does everything around them. You only need something else to *develop* RAW files (Lightroom, Capture One) or to serve photos to a phone from a server (Immich, PhotoPrism) — and FolioSort writes the ratings, keywords, people and places those apps read.
 
@@ -354,11 +363,15 @@ FolioSort keeps the library as **plain folders** and does everything around them
 
 macOS 14 (Sonoma) or later · Apple Silicon or Intel.
 
-### Windows — FolioSort 4.9.9 (FolioSort 5 coming soon)
-1. Open the **[FolioSort listing on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)**.
-2. Click **Get** — the Store installs it and keeps it up to date, so you'll get FolioSort 5 automatically when it lands.
+### Windows — FolioSort 5.0.0
+**Microsoft Store (recommended):** open the **[FolioSort listing](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** and click **Get** — the Store installs it and keeps it up to date. Certified by Microsoft, no SmartScreen warning.
 
-Windows 10 (1809) or later, x64. Certified by Microsoft — no SmartScreen warnings. A portable `.zip` is attached to [Windows releases](https://github.com/tiagotrindade/FolioSort/releases) for machines without the Store.
+**Direct download** (no Microsoft account, or a work PC that blocks the Store):
+1. Download [**`FolioSort-5.0.0-windows.zip`**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort-5.0.0-windows.zip).
+2. Right-click it → **Properties** → tick **Unblock** → OK.
+3. Extract it anywhere and open **Install First.html**.
+
+Your licence, settings and Library carry over from 4.x. Windows 10 (version 2004 or later) or Windows 11, 64-bit. FolioSort 5 on Windows also brings a **new Organize screen** and a **Windows 11 look**.
 
 ---
 
@@ -418,7 +431,7 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 
 ## Changelog
 
-**v5.0.0 — 14 Oct 2026 · macOS.** FolioSort becomes somewhere you stay: the **Library**, **AI Cull**, **Best Shot**, **AI Tags**, **Places / Dates / Edit metadata**, **Backup Copy + Archive Health**, **Labs** and **Ask Your AI** · AI Search prepares its engine in the background, so the first index starts straight away · 50,000-photo scans finish in seconds · Duplicates and Best Shot remember the last scan · Live Photos stay together in Organize and Rename. → [Full notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.0)
+**v5.0.0 — 14 Oct 2026 · macOS and Windows.** FolioSort becomes somewhere you stay: the **Library**, **AI Cull**, **Best Shot**, **AI Tags**, **Places / Dates / Edit metadata**, **Backup Copy + Archive Health**, **Labs** and **Ask Your AI** · AI Search prepares its engine in the background, so the first index starts straight away · 50,000-photo scans finish in seconds · Duplicates and Best Shot remember the last scan · Live Photos stay together in Organize and Rename · on Windows, a new Organize screen and a Windows 11 look. → [Full notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.0)
 
 **v4.9.x — both platforms.** AI Search **12.7× faster** (62 ms on 100,000 photos) · zoom to 8× · Events grouping interval · bulk *"Keep suggested, mark all the rest"* for Duplicates · cloud placeholders never downloaded behind your back · a 2 TB duplicate scan in a flat 5.8 MB of memory · write pre-flight across every module that moves files · place names written into photos (IPTC + XMP).
 
