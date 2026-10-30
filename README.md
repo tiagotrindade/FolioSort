@@ -19,10 +19,10 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.0.0 | 🪟 **Windows 10/11** · FolioSort 5.0.0 |
+| 🍎 **macOS 14+** · FolioSort 5 | 🪟 **Windows 10/11** · FolioSort 5 |
 |:---:|:---:|
 | [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
-| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort-5.0.0-windows.zip) |
+| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
 
@@ -32,7 +32,7 @@
 
 ![FolioSort 5 Library Home — every photo on every drive in one timeline, with on-device AI search, On this day and recent events](docs/screenshots/v5/library-home.png)
 
-<sub>Real app, real photos — FolioSort 5.0.0. Same Library, AI Cull, Tag & Fix and Protect on Windows.</sub>
+<sub>Real app, real photos — FolioSort 5. Same Library, AI Cull, Tag & Fix and Protect on Windows.</sub>
 
 <br>
 
@@ -356,18 +356,18 @@ FolioSort keeps the library as **plain folders** and does everything around them
 
 ## How to install
 
-### macOS — FolioSort 5.0.0
+### macOS
 1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
 macOS 14 (Sonoma) or later · Apple Silicon or Intel.
 
-### Windows — FolioSort 5.0.0
+### Windows
 **Microsoft Store (recommended):** open the **[FolioSort listing](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** and click **Get** — the Store installs it and keeps it up to date. Certified by Microsoft, no SmartScreen warning.
 
 **Direct download** (no Microsoft account, or a work PC that blocks the Store):
-1. Download [**`FolioSort-5.0.0-windows.zip`**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort-5.0.0-windows.zip).
+1. Download **`FolioSort-<version>-windows.zip`** from the [latest release](https://github.com/tiagotrindade/FolioSort/releases/latest).
 2. Right-click it → **Properties** → tick **Unblock** → OK.
 3. Extract it anywhere and open **Install First.html**.
 
@@ -430,6 +430,22 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 ---
 
 ## Changelog
+
+FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
+
+**v5.0.12 — 29 Oct · macOS and Windows.** Your **Library with the drive unplugged**: every photo on an external drive keeps a small preview, so an unplugged drive shows greyed photos with the drive's badge instead of blank tiles · **Settings › Offline previews** shows the space they use and can clear them · steadier long runs. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.12)
+
+**v5.0.11 — 28 Oct.** Organize asks once before **replacing photos on a NAS or network share** with no Trash — *Skip these*, *Keep both* or *Replace permanently* — instead of failing every file · **People has no 12,000-face cap**: big libraries are grouped in batches · Find more searches for that person · fewer pauses. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.11)
+
+**v5.0.10 — 26 Oct.** Organize takes a Google Takeout's missing dates from **Google's own .json files** · when a Copy won't fit, the space alert offers **Move instead** · moves leave photos already in place alone · Library and Find a Person return to where you were. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.10)
+
+**v5.0.9 — 24 Oct.** No more **stuck indexing**: a photo that never finishes reading is set aside after 90 seconds and the rest carry on · Duplicates no longer closes on tens of thousands of groups. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.9)
+
+**v5.0.8 — 23 Oct · Windows.** People, AI Search and AI Tags work on PCs **without the Visual C++ Redistributable** · Duplicates and Best Shot open saved results instantly. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.8)
+
+**v5.0.5 – v5.0.7 — 20–22 Oct.** Organize and Rename stay quick on very large folders · activation works offline · **Keep this report**: the Takeout and Organize summary by email (numbers only, never file names) · a NAS that drops mid-copy no longer leaves a half-copied photo · the metadata editor stays quick at 25,000 photos.
+
+**v5.0.1 – v5.0.4 — 16–19 Oct.** Fixes from the first days of 5.0: no crash at launch, a Library over a whole home folder reads it all · Undo and Workflows fixes · licence keys pasted with their label are recognised · a OneDrive folder is no longer downloaded by a scan on Windows · Backup Copy onto a NAS recognises photos already there · fewer freezes.
 
 **v5.0.0 — 14 Oct 2026 · macOS and Windows.** FolioSort becomes somewhere you stay: the **Library**, **AI Cull**, **Best Shot**, **AI Tags**, **Places / Dates / Edit metadata**, **Backup Copy + Archive Health**, **Labs** and **Ask Your AI** · AI Search prepares its engine in the background, so the first index starts straight away · 50,000-photo scans finish in seconds · Duplicates and Best Shot remember the last scan · Live Photos stay together in Organize and Rename · on Windows, a new Organize screen and a Windows 11 look. → [Full notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.0)
 
