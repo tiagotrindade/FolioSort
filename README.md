@@ -8,7 +8,7 @@
 
 **Nothing imported. Nothing uploaded. Pay once, own it forever.**
 
-### 🎉 [FolioSort 5 is out — for Mac and Windows](https://github.com/tiagotrindade/FolioSort/releases/latest)
+### 🎉 [New in 5.2: Tidy Up — a folder of photos in order, and you see it first](#-new-in-52--tidy-up)
 
 [![Latest release](https://img.shields.io/github/v/release/tiagotrindade/FolioSort?label=latest&color=8b5cf6)](https://github.com/tiagotrindade/FolioSort/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/tiagotrindade/FolioSort/total?color=8b5cf6)](https://github.com/tiagotrindade/FolioSort/releases)
@@ -19,14 +19,14 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5 | 🪟 **Windows 10/11** · FolioSort 5 |
+| 🍎 **macOS 14+** · FolioSort 5.1.3 | 🪟 **Windows 10/11** · FolioSort 5.2 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
-| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| Apple Silicon & Intel · Signed & notarized by Apple · 5.2 for Mac is on its way | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
 
-**Jump to:** [What's new in 5](#-whats-new-in-foliosort-5) · [Screenshots](#-library--every-photo-on-every-drive-in-one-timeline) · [Who it's for](#who-its-for) · [Pricing](#-pricing--pay-once-own-it-forever) · [Compare](#how-foliosort-compares) · [FAQ](#faq) · [Install](#how-to-install)
+**Jump to:** [Tidy Up](#-new-in-52--tidy-up) · [What's new in 5](#-whats-new-in-foliosort-5) · [Screenshots](#-library--every-photo-on-every-drive-in-one-timeline) · [Who it's for](#who-its-for) · [Pricing](#-pricing--pay-once-own-it-forever) · [Compare](#how-foliosort-compares) · [FAQ](#faq) · [Install](#how-to-install)
 
 <br>
 
@@ -73,6 +73,34 @@ FolioSort reads the **EXIF metadata, GPS coordinates and capture dates** already
 > — Maria · Portugal
 
 Four of them, not four thousand — these people wrote in after buying, and the words are theirs.
+
+---
+
+## 🧽 New in 5.2 — Tidy Up
+
+**Pick a folder. See how it will look. Then say yes.** Tidy Up is the first thing the Wizard offers: choose Pictures, Downloads, the Desktop or any drive, and FolioSort shows the result *before anything changes* — the real folders, with thumbnails, in one sentence you can edit:
+
+> *We'll **copy them** into **Photos › Sorted**, by **year, then month**.*
+
+- **Every part of that sentence is a menu** — copy or move, where to, which folder layout (every Organize preset), what happens to videos and to photos without a date.
+- **Checked byte for byte.** Copy is the default; your original folder stays exactly as it was. One click puts it all back.
+- **Then clean up, one step at a time** — duplicates, screenshots and blurry shots, each opened on the folder you just sorted. Nothing goes without your OK, and nothing is deleted: screenshots move to a folder of their own, the rest to the Recycle Bin / Trash.
+- **Pro and Elite do it all with one click** — the whole folder in one run, every clean-up step in a row, and each step undone on its own, even after a restart. Elite adds the best shot of every burst and hands the people it found to Find a Person.
+- **Free organizes the 100 newest photos** of the folder and tells you how many are still waiting.
+- Stop half way and the Wizard offers to **continue where you left off**. **Expert mode** opens the full Organize screen on the same folder.
+
+**Also new since 5.0:**
+
+| | |
+|---|---|
+| 🌍 **Six languages** | English, Deutsch, Español, Français, **日本語** and **简体中文** — following your system, or chosen in Settings › Language. Folder names stay the same in every language. |
+| 🗜️ **Takeout as .zip** | Exit Cloud Kit and Google Photos take a folder of `.zip` files (or the files themselves) and offer *Unzip and continue*. |
+| 🙋 **"Is this Ana?"** | People compares new faces with everyone you have named — on any folder or drive, connected or not — and asks before joining them. |
+| 🛑 **Asks before it hurts** | Organize asks before a Move files photos by a date that is not their own; Merge asks before it fills your disk; a NAS without a Trash gets *Skip / Keep both / Replace*. |
+| 🖼️ **Offline previews** | An unplugged drive keeps its previews — in colour — and you choose how much space they may use. |
+| 🔎 **AI Search** | Match Strength is remembered between launches, and moving it runs the search again. |
+
+→ [5.2.0 release notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0) · Windows now; the Mac build follows shortly.
 
 ---
 
@@ -269,7 +297,7 @@ The Takeout export is notoriously broken. FolioSort's Takeout import fixes it **
 See **every drive in one library** — even the one in the drawer. Find *"grandma's 80th birthday"* in a second. Clear the duplicates that every backup-of-a-backup leaves behind.
 
 ### 🧹 Everyone with a messy Downloads folder
-One **Wizard**, three clicks, done. No metadata expertise required.
+**Tidy Up**: pick the folder, look at the result, say yes — then clear the duplicates, screenshots and blurry shots one step at a time. No metadata expertise required.
 
 ---
 
@@ -281,6 +309,7 @@ One **Wizard**, three clicks, done. No metadata expertise required.
 |---|:---:|:---:|:---:|
 | **Library** — timeline, map, events, places, viewer | ✓ unlimited | ✓ | ✓ |
 | **Google Takeout import** | ✓ always free | ✓ | ✓ |
+| **Tidy Up** — a folder in order, then cleaned up | 100 newest photos | **Whole folder**, every step in one click | **Whole folder** + best shot of every burst |
 | Organize by real capture date (EXIF) | 100 files/batch | **Unlimited** | **Unlimited** |
 | Rename · Merge Sources · Undo | 100 files/batch | **Unlimited** | **Unlimited** |
 | RAW & cinema formats, custom events, profiles, regex | limited | ✓ | ✓ |
@@ -357,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg) (5.1.3 — the app offers 5.2 by itself as soon as it is out).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -376,6 +405,9 @@ Your licence, settings and Library carry over from 4.x. Windows 10 (version 2004
 ---
 
 ## FAQ
+
+### What is Tidy Up?
+The quickest way from a messy folder to a tidy one, new in 5.2. Pick a folder, and FolioSort shows the folders it will make — with your photos in them — before anything changes; every part of the plan is a menu you can change. Then it walks you through the duplicates, screenshots and blurry shots in that folder, one step at a time, with nothing deleted and every step undoable. Free does the 100 newest photos; Pro and Elite do the whole folder.
 
 ### What is new in FolioSort 5?
 A **Library** of every photo on every drive (free, no limit), **AI Cull** with *Write for Lightroom*, **Best Shot**, **AI Tags**, **Places / Dates / Edit metadata** written into your files, **Backup Copy** and **Archive Health**, **Labs**, and **Ask Your AI** for Claude Desktop. It's a free update for every Pro and Elite owner. See the [release notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.0).
@@ -433,6 +465,16 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
 
+**v5.2.0 — 7 Nov · Windows (Mac to follow).** **Tidy Up**: pick a folder, see how it will look, then clean up duplicates, screenshots and blurry shots one step at a time · Takeout and cloud exports as **.zip** files · FolioSort in **Japanese** and **Simplified Chinese** · People lands back on the person you just left · offline previews keep their colours · Match Strength remembered · an unreadable licence at launch says so instead of showing you as Free. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0)
+
+**v5.1.3 — 2 Nov · macOS and Windows.** **Merge asks before it fills your disk** — how much it needs, how much room there is · a Takeout video keeps its location's hemisphere · fewer pauses in Places, Undo and People. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.1.3)
+
+**v5.1.2 — 1 Nov.** People asks **"Is this Ana?"** when a new folder holds someone you already named, on any drive · Organize **asks before a Move** files photos by a date that is not their own · "Dates from folder names" and "from nearby photos" are two switches · offline previews for very large libraries. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.1.2)
+
+**v5.1.1 — 31 Oct.** **Choose FolioSort's language** in the welcome or in Settings, whatever language your computer is in · Rename stops, and says why, when its drive goes · fewer pauses in Merge, People and Undo. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.1.1)
+
+**v5.1.0 — 30 Oct.** FolioSort speaks **German, Spanish and French** · a Takeout photo whose .json gave no date is filed by its own date · more Takeout .json names found (cut-short and edited copies). → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.1.0)
+
 **v5.0.12 — 29 Oct · macOS and Windows.** Your **Library with the drive unplugged**: every photo on an external drive keeps a small preview, so an unplugged drive shows greyed photos with the drive's badge instead of blank tiles · **Settings › Offline previews** shows the space they use and can clear them · steadier long runs. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.12)
 
 **v5.0.11 — 28 Oct.** Organize asks once before **replacing photos on a NAS or network share** with no Trash — *Skip these*, *Keep both* or *Replace permanently* — instead of failing every file · **People has no 12,000-face cap**: big libraries are grouped in batches · Find more searches for that person · fewer pauses. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.0.11)
@@ -477,7 +519,7 @@ or write to **feedback@foliosort.app** — we usually ship a fix within hours.
 
 Know someone with 30,000 photos in one folder? **[Send them the link](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=share)** — the free tier is enough to fix their Takeout export tonight.
 
-⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/latest/download/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
+⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
 
 ![Page visits](https://hits.sh/github.com/tiagotrindade/FolioSort.svg?style=flat-square&label=Page%20visits&color=8b5cf6)
 
