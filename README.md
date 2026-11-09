@@ -19,10 +19,10 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.1.3 | 🪟 **Windows 10/11** · FolioSort 5.2 |
+| 🍎 **macOS 14+** · FolioSort 5.2.1 | 🪟 **Windows 10/11** · FolioSort 5.2 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
-| Apple Silicon & Intel · Signed & notarized by Apple · 5.2 for Mac is on its way | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
 
@@ -100,7 +100,7 @@ Four of them, not four thousand — these people wrote in after buying, and the 
 | 🖼️ **Offline previews** | An unplugged drive keeps its previews — in colour — and you choose how much space they may use. |
 | 🔎 **AI Search** | Match Strength is remembered between launches, and moving it runs the search again. |
 
-→ [5.2.0 release notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0) · Windows now; the Mac build follows shortly.
+→ [5.2.0 release notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0) · macOS and Windows.
 
 ---
 
@@ -386,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg) (5.1.3 — the app offers 5.2 by itself as soon as it is out).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg) (5.2.1 — the app offers each update by itself).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -465,7 +465,9 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
 
-**v5.2.0 — 7 Nov · Windows (Mac to follow).** **Tidy Up**: pick a folder, see how it will look, then clean up duplicates, screenshots and blurry shots one step at a time · Takeout and cloud exports as **.zip** files · FolioSort in **Japanese** and **Simplified Chinese** · People lands back on the person you just left · offline previews keep their colours · Match Strength remembered · an unreadable licence at launch says so instead of showing you as Free. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0)
+**v5.2.1 — 9 Nov · macOS and Windows.** **Running the same Organize again is safe** — copies it already made are found and left alone, instead of asking about each one again · a locked or read-only file in the destination is never replaced, and the results say why · People sorts by name, and you can name people on a photo by hand · Tidy Up names photos without a date on the Preview, and Free can preview a Pro folder layout · the Library names the unplugged drive a photo is on. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.1)
+
+**v5.2.0 — 7 Nov · macOS and Windows.** **Tidy Up**: pick a folder, see how it will look, then clean up duplicates, screenshots and blurry shots one step at a time · Takeout and cloud exports as **.zip** files · FolioSort in **Japanese** and **Simplified Chinese** · People lands back on the person you just left · offline previews keep their colours · Match Strength remembered · an unreadable licence at launch says so instead of showing you as Free. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.0)
 
 **v5.1.3 — 2 Nov · macOS and Windows.** **Merge asks before it fills your disk** — how much it needs, how much room there is · a Takeout video keeps its location's hemisphere · fewer pauses in Places, Undo and People. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.1.3)
 
@@ -519,7 +521,7 @@ or write to **feedback@foliosort.app** — we usually ship a fix within hours.
 
 Know someone with 30,000 photos in one folder? **[Send them the link](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=share)** — the free tier is enough to fix their Takeout export tonight.
 
-⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.1.3/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
+⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
 
 ![Page visits](https://hits.sh/github.com/tiagotrindade/FolioSort.svg?style=flat-square&label=Page%20visits&color=8b5cf6)
 
