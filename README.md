@@ -19,9 +19,9 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.2.1 | 🪟 **Windows 10/11** · FolioSort 5.2 |
+| 🍎 **macOS 14+** · FolioSort 5.2.5 | 🪟 **Windows 10/11** · FolioSort 5.2 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.5/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
 | Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
@@ -386,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg) (5.2.1 — the app offers each update by itself).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.5/FolioSort.dmg) (5.2.5 — the app offers each update by itself).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -464,6 +464,12 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 ## Changelog
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
+
+**v5.2.5 — 13 Nov · macOS.** **Right-click a photo in the Library: Move to Trash, Rename… and Move to Folder…**, with ⌘⌫ and Undo · **Blurry: Move to Folder…**, the way out on a NAS with no Trash · on a NAS, cancelling or restarting a scan really stops it, and Tidy Up says it is connecting instead of showing 0 · Tidy Up no longer pauses on folders of hundreds of thousands of photos · the sidebar on macOS 14 Sonoma shows whole names again. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.5)
+
+**v5.2.4 — 12 Nov · macOS.** **AI Search no longer gets stuck reading the words in photos** · Rename's {City} and {Country} no longer come out as "Unknown" · **People in the Library**: name, rename, merge, and take out photos that aren't that person · the "Same person?" card stays put, with bigger faces · offline previews can have a fixed size in GB · fewer pauses on very large libraries. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.4)
+
+**v5.2.3 — 11 Nov · Windows.** **People in the Library**: name, rename and merge from Library › People · sort the Find a Person board by name · "Move to another person" moves only the photos you ticked · naming and merging on a big board no longer pauses the window. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.3)
 
 **v5.2.1 — 9 Nov · macOS and Windows.** **Running the same Organize again is safe** — copies it already made are found and left alone, instead of asking about each one again · a locked or read-only file in the destination is never replaced, and the results say why · People sorts by name, and you can name people on a photo by hand · Tidy Up names photos without a date on the Preview, and Free can preview a Pro folder layout · the Library names the unplugged drive a photo is on. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.1)
 
