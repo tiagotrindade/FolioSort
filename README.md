@@ -19,9 +19,9 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.2.5 | 🪟 **Windows 10/11** · FolioSort 5.2 |
+| 🍎 **macOS 14+** · FolioSort 5.2.6 | 🪟 **Windows 10/11** · FolioSort 5.2 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.5/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.6/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
 | Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
@@ -386,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.5/FolioSort.dmg) (5.2.5 — the app offers each update by itself).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.6/FolioSort.dmg) (5.2.6 — the app offers each update by itself).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -465,6 +465,8 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
 
+**v5.2.6 — 14 Nov · macOS.** **Find by Photo: “Add N to a Person…”** gives the matches to a named person · naming someone with a name already taken asks **“Same person?”** · typing in the Library's search no longer opens a photo on Space, and ⌘⌫ there deletes text · **Page Up / Page Down / Home / End** scroll every pane · AI Tags keeps showing its progress, and the status bar says what is running · Activity's list of written changes scrolls instead of pushing the sidebar away.
+
 **v5.2.5 — 13 Nov · macOS.** **Right-click a photo in the Library: Move to Trash, Rename… and Move to Folder…**, with ⌘⌫ and Undo · **Blurry: Move to Folder…**, the way out on a NAS with no Trash · on a NAS, cancelling or restarting a scan really stops it, and Tidy Up says it is connecting instead of showing 0 · Tidy Up no longer pauses on folders of hundreds of thousands of photos · the sidebar on macOS 14 Sonoma shows whole names again. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.5)
 
 **v5.2.4 — 12 Nov · macOS.** **AI Search no longer gets stuck reading the words in photos** · Rename's {City} and {Country} no longer come out as "Unknown" · **People in the Library**: name, rename, merge, and take out photos that aren't that person · the "Same person?" card stays put, with bigger faces · offline previews can have a fixed size in GB · fewer pauses on very large libraries. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.4)
@@ -527,7 +529,7 @@ or write to **feedback@foliosort.app** — we usually ship a fix within hours.
 
 Know someone with 30,000 photos in one folder? **[Send them the link](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=share)** — the free tier is enough to fix their Takeout export tonight.
 
-⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.1/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
+⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.6/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
 
 ![Page visits](https://hits.sh/github.com/tiagotrindade/FolioSort.svg?style=flat-square&label=Page%20visits&color=8b5cf6)
 
