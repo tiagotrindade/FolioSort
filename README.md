@@ -19,9 +19,9 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.2.8 | 🪟 **Windows 10/11** · FolioSort 5.2 |
+| 🍎 **macOS 14+** · FolioSort 5.2.9 | 🪟 **Windows 10/11** · FolioSort 5.2 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.8/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.9/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
 | Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
@@ -386,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.8/FolioSort.dmg) (5.2.8 — the app offers each update by itself).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.9/FolioSort.dmg) (5.2.9 — the app offers each update by itself).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -465,6 +465,8 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
 
+**v5.2.9 — 19 Nov · macOS and Windows.** **FolioSort in Italian, Traditional Chinese (Taiwan), Brazilian Portuguese and Korean**, German and Spanish complete · **Best Shot shows a group one photo at a time**: ← / →, Keep or Remove with K / Space and X / Delete, a RAW and its JPEG marked together · the Library's search finds people by name, and every "Do something…" item works on your selection with a Back to Library bar · Find a Person remembers its folder and last run · a drive pulled out stops the run in seconds and is named as the reason · a full disk, a vanished file and a failed rotation explained in your language · VoiceOver and Narrator say counts that change. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.2.9)
+
 **v5.2.8 — 16 Nov · macOS.** **A camera's own files travel with the clip** (GoPro .THM/.LRV, DJI .SRT/.LRF, Sony M01.XML go into "Videos" with it and take its new name; GoPro .LRV organized on Free) · **Organize names the files it left for want of a date** ("Show which") · **French complete**, ~300 more German and Spanish texts · rotating a HEIC turns it · video tiles show a real frame · Edit metadata names the photo and goes back to the Library · Reminder Photos opens a photo large · a damaged Library index keeps its folders.
 
 **v5.2.7 — 16 Nov · macOS.** **Tidy Up writes Google's dates into your photos** (Takeout .json and file-name dates; a photo with a date is never changed; Undo puts it back) · **about 1,800 more texts in Japanese and Simplified Chinese** — AI Search, People, AI Tags, Places, Dates, Settings, the Library, Labs, Rename, Events · a date known only to its year or month is filed under **00**, never a made-up day · a **full disk** is said as a full disk, not as permissions · Find more of this person looks through the Library, deleted photos leave Find a Person for good.
@@ -533,7 +535,7 @@ or write to **feedback@foliosort.app** — we usually ship a fix within hours.
 
 Know someone with 30,000 photos in one folder? **[Send them the link](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=share)** — the free tier is enough to fix their Takeout export tonight.
 
-⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.8/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
+⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.2.9/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
 
 ![Page visits](https://hits.sh/github.com/tiagotrindade/FolioSort.svg?style=flat-square&label=Page%20visits&color=8b5cf6)
 
