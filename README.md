@@ -19,9 +19,9 @@
 
 <br>
 
-| 🍎 **macOS 14+** · FolioSort 5.3.3 | 🪟 **Windows 10/11** · FolioSort 5.3 |
+| 🍎 **macOS 14+** · FolioSort 5.3.4 | 🪟 **Windows 10/11** · FolioSort 5.3 |
 |:---:|:---:|
-| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.3/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
+| [**⬇️ Download FolioSort.dmg — free**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.4/FolioSort.dmg) | [**Get it from the Microsoft Store — free**](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github) |
 | Apple Silicon & Intel · Signed & notarized by Apple | One-click install · Auto-updates · or the [direct .zip](https://github.com/tiagotrindade/FolioSort/releases/latest) |
 
 **No account · no card · no upload.** The Library is free with no limit, and Google Takeout import is free forever.
@@ -386,7 +386,7 @@ FolioSort keeps the library as **plain folders** and does everything around them
 ## How to install
 
 ### macOS
-1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.3/FolioSort.dmg) (5.3.3 — the app offers each update by itself).
+1. Download [**`FolioSort.dmg`**](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.4/FolioSort.dmg) (5.3.4 — the app offers each update by itself).
 2. Open the DMG and drag **FolioSort** to **Applications**.
 3. Launch it — **signed and notarized by Apple**, so it opens with no Gatekeeper warning.
 
@@ -464,6 +464,8 @@ Those manage a *library database*. FolioSort works on the **actual files and fol
 ## Changelog
 
 FolioSort 5 ships an update about every week, free for everyone who bought Pro or Elite. Since 5.0.0:
+
+**v5.3.4 — 26 Nov · macOS.** **Set location on the map**: select photos with no GPS, click the map or search a place, and FolioSort writes the position into the files, with Undo · Organize can **leave out photos the destination already has**, and a new Inbox to Archive workflow template · **Review before applying** for a Workflow's Organize and Rename steps · Move to Trash on a person's page and from the photo viewer · Lightroom's .acr travels with its photo · every AI Copy/Move and Split into Folders stop on a full, read-only or missing disk, and a refused copy no longer leaves an empty file. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.3.4)
 
 **v5.3.3 — 25 Nov · macOS.** **Show in Finder** wherever you see a photo: Best Shot tiles, the Organize, Rename and Events lists, both copies in Duplicates, and a button beside Done on the enlarged photo · Places and Dates keep the Mac awake while they write and wait up to 30 seconds for a sleeping disk · a disk that turns read-only mid-run stops after ten files in a row · the free plan is 100 files per run on every Mac · "Finished checking out?" asks what stopped you. → [Notes](https://github.com/tiagotrindade/FolioSort/releases/tag/v5.3.3)
 
@@ -543,7 +545,7 @@ or write to **feedback@foliosort.app** — we usually ship a fix within hours.
 
 Know someone with 30,000 photos in one folder? **[Send them the link](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=share)** — the free tier is enough to fix their Takeout export tonight.
 
-⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.3/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
+⬇️ **[Download for macOS](https://github.com/tiagotrindade/FolioSort/releases/download/v5.3.4/FolioSort.dmg)** · 🪟 **[Get it on the Microsoft Store](https://apps.microsoft.com/detail/9nlw1xwgk181?cid=github)** · 🌐 **[foliosort.app](https://foliosort.app?utm_source=github&utm_medium=readme&utm_campaign=footer)**
 
 ![Page visits](https://hits.sh/github.com/tiagotrindade/FolioSort.svg?style=flat-square&label=Page%20visits&color=8b5cf6)
 
